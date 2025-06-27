@@ -1,4 +1,4 @@
-name: Multiple Shells commands
+name: Multiple shells commands
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      - name: python command
+      - name: python commands
         run: |
           import platform
           print(platform.processor())
@@ -34,4 +34,3 @@ jobs:
           echo "GITHUB_EVENT_NAME: ${GITHUB_EVENT_NAME}"
           echo "GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}"
         shell: bash
-
