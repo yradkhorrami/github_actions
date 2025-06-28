@@ -13,7 +13,7 @@ def test_calc_substraction():
 def test_calc_multiply():
 	# function test the output of 2 * 4
 	output = 2 * 4
-	asser output == 8
+	assert output == 8
 
 def test_coucou():
 	# function test if the output returns 'hello'
