@@ -23,6 +23,8 @@ jobs:
           git checkout master
           git branch --set-upstream-to=origin/master
           git pull
+          touch testFile.txt
+          echo "This is a test" >> testFile.txt
           ls -a
           git add .
           git commit -m "random file from action"
