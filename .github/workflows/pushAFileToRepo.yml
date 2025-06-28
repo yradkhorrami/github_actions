@@ -23,7 +23,6 @@ jobs:
           git checkout master
           git branch --set-upstream-to=origin/master
           git pull
-          pytest >> log_pytest.txt
           ls -a
           git add .
           git commit -m "random file from action"
